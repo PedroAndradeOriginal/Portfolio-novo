@@ -17,11 +17,11 @@ body {
 ::-webkit-scrollbar {
     width: 8px;
 }
-  
+
 ::-webkit-scrollbar-track {
     background-color: #171717;
 }
-  
+
 ::-webkit-scrollbar-thumb {
     background-color: #5A4C94;
     border-radius: 10px;
@@ -43,7 +43,7 @@ header {
     background-color: #171717;
 }
 
-header nav{
+header nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -95,21 +95,25 @@ header nav{
 .nav-link:hover::after {
     transform: scaleX(1);
     transform-origin: left;
-    
+
 }
 
 .nav-link:hover {
     color: #FFF;
 }
 
-.line-1,.line-2, .line-3 {
+.line-1,
+.line-2,
+.line-3 {
     width: 30px;
     height: 3px;
     background-color: #fff;
     transition: 0.6s;
 }
 
-.line-1t, .line-2t, .line-3t {
+.line-1t,
+.line-2t,
+.line-3t {
     width: 30px;
     height: 3px;
     background-color: #fff;
@@ -125,20 +129,8 @@ header nav{
 }
 
 .line-3t {
-    transform: rotate(-45deg) ;
+    transform: rotate(-45deg);
 }
-
-
-/* --------------------------------------------------------*/
-
-
-
-
-
-
-
-
-
 
 /* ------------------------------ MAIN --------------------------------*/
 
@@ -150,13 +142,17 @@ main {
 
 .s-home {
     display: flex;
+    justify-content: center;
     padding: 70px 40px;
 }
 
 .article-home {
-    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: space-evenly;
+    width: 50%;
     min-width: 501px;
-    margin-top: 50px;
     margin-left: 2%;
 }
 
@@ -166,7 +162,7 @@ main {
     color: #FFF5EE;
 }
 
-.article-home h1{
+.article-home h1 {
     font-size: 6.4rem;
     font-weight: 700;
     color: #FFF5EE;
@@ -197,7 +193,7 @@ main {
 
 .get-in-touch {
     display: block;
-    max-width: 200px;    
+    max-width: 200px;
     padding: 15px;
     border-radius: 6px;
     border: 1px solid #FAFAFA;
@@ -216,48 +212,24 @@ main {
 
 .img-home {
     position: relative;
-    bottom: 60px;
-    right: 40px;
     max-width: 38%;
     animation: moveUndraw 1.7s infinite alternate-reverse linear;
 }
-
-
-
-/*------------------------------*/
-
-
-
-
-
 
 /*------- SECTION About ------*/
 
 .s-about {
     display: flex;
     justify-content: center;
-    padding: 70px 20px;
-    background-color: #191919;
-}
-
-.profile-about {
-    max-width: 340px;
-    margin-right: 8%;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 50%;
-    border: 1px solid #191919;
-    transition: border 1s ease;
-}
-
-.profile-about:hover {
-    border: 1px solid #5A4C94;
+    padding: 120px 20px 150px;
 }
 
 .article-about {
-    max-width: 630px;
+    max-width: 90%;
+    text-align: justify;
 }
 
-.article-about h2{
+.article-about h2 {
     margin-bottom: 20px;
     color: #fafafa;
     font-size: 4rem;
@@ -270,22 +242,11 @@ main {
 }
 
 .article-about p {
+
     font-size: 1.8rem;
     line-height: 3.2rem;
     color: #cccccc;
 }
-
-.article-about p spam {
-    color: #5A4C94;
-    font-weight: 600;
-}
-
-/*------------------------------*/
-
-
-
-
-
 
 /*------------ SECTION Projetos -----------*/
 
@@ -295,7 +256,6 @@ main {
 
 .title-projects {
     text-align: center;
-    padding-bottom: 24px;
     font-size: 4rem;
     font-weight: 500;
     color: #fafafa;
@@ -307,6 +267,10 @@ main {
     gap: 70px;
     margin-top: 50px;
     padding: 0 20px;
+}
+
+.container-projects:hover {
+    transform: scale(1.1);
 }
 
 .row-1, .row-2 {
@@ -395,7 +359,7 @@ main {
 
 .embreve {
     text-align: center;
-    margin: auto; 
+    margin: auto;
 }
 
 .embreve p {
@@ -425,13 +389,6 @@ main {
     margin-left: 8%;
     color: #fff;
 }
-
-/*-------------------------------------*/
-
-
-
-
-
 
 /*------------ SECTION Skills -----------*/
 
@@ -489,7 +446,7 @@ main {
     transition: 0.8s ease;
     background-color: #212121;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    
+
 }
 
 .card-skills:hover {
@@ -499,14 +456,6 @@ main {
 .card-skills img {
     min-width: 80px;
 }
-
-/*---------------------------------*/
-
-
-
-
-
-
 
 /*------------ SECTION Contact -----------*/
 
@@ -532,11 +481,11 @@ main {
     display: flex;
     align-items: center;
     gap: 30px;
-    margin-top: 40px;  
+    margin-top: 40px;
 }
 
 .social-links img {
-    transition: 0.2s;  
+    transition: 0.2s;
 }
 
 .social-links img:hover {
@@ -602,21 +551,8 @@ main {
     filter: brightness(0.90)
 }
 
-
-/*------------------------------*/
-
-
-
-
-/*-----------------------------------------------*/
-
-
-
-
-
-
 /*---------------------- FOOTER -------------------------*/
-                            
+
 
 footer {
     display: flex;
@@ -646,11 +582,6 @@ footer a:hover {
     padding-bottom: 15px;
 }
 
-
-/*-----------------------------------------------*/
-
-
-
 /* -------------------------- Mobile --------------------------------- */
 
 
@@ -670,7 +601,7 @@ footer a:hover {
         margin: 3px;
     }
 
-    .article-home p{
+    .article-home p {
         margin-left: 20px;
     }
 
@@ -731,14 +662,14 @@ footer a:hover {
         margin-top: 0;
     }
 
-    .form { 
+    .form {
         min-width: 360px;
     }
 
     .form button {
         margin: 30px auto;
     }
-   
+
 }
 
 @media(max-width:950px) {
@@ -756,18 +687,18 @@ footer a:hover {
     }
 
     .show-list {
-       display: flex;
-       flex-direction: column;
-       width: 100%;
-       height: 100vh;
-       padding-top: 50px;
-       position: absolute;
-       top: 55px;
-       left: 0;
-       overflow: hidden;
-       text-align: center;
-       background-color: #171717;
-       opacity: 0.97;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        padding-top: 50px;
+        position: absolute;
+        top: 55px;
+        left: 0;
+        overflow: hidden;
+        text-align: center;
+        background-color: #171717;
+        opacity: 0.97;
     }
 
     .item-list {
@@ -792,7 +723,7 @@ footer a:hover {
 
     .menu-icon {
         display: flex;
-        flex-direction: column; 
+        flex-direction: column;
         gap: 5px;
     }
 
@@ -852,7 +783,7 @@ footer a:hover {
     }
 }
 
-@media(max-width: 420px) {  
+@media(max-width: 420px) {
     html {
         font-size: 48%;
     }
@@ -862,12 +793,12 @@ footer a:hover {
     }
 }
 
-
-
 /* KeyFrames */
 
 @keyframes typeWrite {
-    0%,100% {
+
+    0%,
+    100% {
         opacity: 1;
     }
 
@@ -887,7 +818,31 @@ footer a:hover {
 }
 
 
-/* ------- BOTÃO WPP ----------- */
+/* ========================= whatsapp botão =========================== */
+
+@-webkit-keyframes pulse {
+    0% {
+        -webkit-transform: scale(1);
+        -webkit-filter: brightness(100%);
+    }
+
+    100% {
+        -webkit-transform: scale(1.1);
+        -webkit-filter: brightness(120%);
+    }
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        filter: brightness(100%);
+    }
+
+    100% {
+        transform: scale(1.1);
+        filter: brightness(120%);
+    }
+}
 
 .whatsapp-link {
     position: fixed;
@@ -898,13 +853,22 @@ footer a:hover {
     background-color: #25d366;
     color: #fff;
     border-radius: 50px;
-    text-align: center;
-    font-size: 30px;
-    box-shadow: 1px 1px 2px #888;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 3px 3px 2px rgb(87, 82, 82);
     z-index: 1000;
-    animation: moveUndraw 1.7s infinite alternate-reverse linear;
+    animation: pulse 0.9s infinite;
+    animation-direction: alternate;
+    -webkit-animation-name: pulse;
+    animation-name: pulse;
 }
 
-.fa-whatsapp {
-    margin-top: 16px;
+.whatsapp-link:hover {
+    transform: scale(1.2);
+    animation: none;
+}
+
+.whatsapp-link img {
+    height: 50px;
 }
