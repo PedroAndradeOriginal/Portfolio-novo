@@ -1,4 +1,4 @@
 # Portfolio-novo
-Portfólio novo feito com técnicas para testar o Js
+Portfólio feito com HTML, CSS e Js
 
 https://pedroandradeoriginal.github.io/Portfolio-novo/
