@@ -269,7 +269,7 @@ main {
     padding: 0 20px;
 }
 
-.container-projects:hover {
+.cards-project:hover {
     transform: scale(1.1);
 }
 
